@@ -1,0 +1,88 @@
+body {
+  background-image: url("../images/skatescover.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
+}
+
+h1 {
+  position: relative;
+  font-family: "Courgette", cursive;
+  margin-left: 800px;
+  font-size: 50px;
+}
+
+.col,
+.dropdown {
+  float: left;
+  width: 167px;
+  border-style: solid;
+  border-block-color: blue;
+  border-radius: 20px;
+  display: grid;
+  background-color: rgba(224, 64, 6, 0.841);
+  padding: 7px;
+  margin-top: -50px;
+  text-align: center;
+  font-family: "Courgette", cursive;
+  font-weight: 900;
+  box-shadow: 17px -9px 89px 4px #106;
+}
+
+.col:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: 140px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  margin-top: 65px;
+}
+
+.col:hover::before {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
+}
+
+.row {
+  position: relative;
+  display: flex;
+  top: -120px;
+  gap: 5px;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  color: white;
+  background-color: #10e;
+  padding: 5px;
+  text-decoration: none;
+  border-style: dotted;
+}
+.dropdown-content a:hover {
+  color: rgba(224, 64, 6, 0.841);
+  background-color: #00a4bd;
+}
