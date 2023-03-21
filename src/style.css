@@ -99,7 +99,7 @@ h1 {
 
 .carousel {
   position: relative;
-  width: 700px;
+  width: 635px;
   top: -17px;
   margin-left: 94px;
 }
@@ -110,7 +110,12 @@ h1 {
 }
 
 .carousel-control-next {
-  right: 49px;
+  right: 1px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  z-index: 3;
 }
 
 .carousel-item {
