@@ -19,37 +19,46 @@ h1 {
 
 h2 {
   font-size: 10px;
-  margin-left: 90px;
-  margin-top: -14px;
+  color: white;
+  text-align: center;
+  margin-right: 65px;
+  margin-left: 67px;
+  background-color: black;
+  margin-top: 27px;
+  margin-bottom: 22px;
 }
 
 .audio-player {
   display: flex;
-  position: fixed;
+  position: absolute;
   flex-direction: column;
-  width: 300px;
-  height: 68px;
-  margin-left: 992px;
-  margin-top: -84px;
-  background-color: thistle;
-  border-radius: 15px;
-  padding: 20px 30px;
+  width: 203px;
+  height: 115px;
+  border-radius: 18px;
+  margin-left: 1122px;
+  margin-top: -101px;
+  background-image: url(../images/stereo.png);
+  background-repeat: no-repeat;
+  background-size: 239px;
+  box-shadow: 0px 14px 16px -7px #9d1818;
+  background-position: center;
   z-index: 10;
 }
 
 .navigation {
   display: flex;
-  position: fixed;
-  margin-left: 66px;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
+  position: unset;
+  width: 69px;
+  height: 18px;
+  margin-left: 70px;
+  margin-top: -70px;
 }
 
 .action-btn {
-  background-color: white;
+  background-color: thistle;
   border: none;
-  color: wheat;
+  color: red;
+  font-size: 11px;
 }
 
 .img-container {
@@ -59,18 +68,22 @@ h2 {
 
 .img-container::after {
   content: "";
-  position: absolute;
-  height: 5px;
-  width: 5px;
-  background-color: white;
-  left: -6.5px;
-  bottom: 30px;
-  border-radius: 50px;
+
   transform: translate(-50%, -50%);
 
   animation: rotate 3s linear infinite;
 
   animation-play-state: paused;
+}
+
+.img-container img {
+  position: absolute;
+  width: 57px;
+  height: 56px;
+  border-radius: 50px;
+  object-fit: cover;
+  bottom: -1px;
+  left: 7px;
 }
 
 .music-container.play .img-container img {
@@ -87,14 +100,29 @@ h2 {
   }
 }
 
-.img-container img {
+.music-info {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px 15px 0 0;
   position: absolute;
-  width: 59px;
-  height: 59px;
-  border-radius: 50px;
-  object-fit: cover;
-  bottom: 5px;
-  left: -36px;
+  top: 0;
+  left: 20px;
+}
+
+.progress-container {
+  background-color: #d7d7d5;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 58px 200px 9px 72px;
+  height: 5px;
+  width: 30%;
+}
+
+.progress {
+  background-color: red;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
 }
 
 .col,
