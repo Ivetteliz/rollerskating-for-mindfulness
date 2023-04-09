@@ -28,7 +28,7 @@ h2 {
   margin-bottom: 22px;
 }
 
-.audio-player {
+.music-container {
   display: flex;
   position: absolute;
   flex-direction: column;
@@ -66,16 +66,6 @@ h2 {
   width: 110px;
 }
 
-.img-container::after {
-  content: "";
-
-  transform: translate(-50%, -50%);
-
-  animation: rotate 3s linear infinite;
-
-  animation-play-state: paused;
-}
-
 .img-container img {
   position: absolute;
   width: 57px;
@@ -84,6 +74,9 @@ h2 {
   object-fit: cover;
   bottom: -1px;
   left: 7px;
+  animation: rotate 3s linear infinite;
+
+  animation-play-state: paused;
 }
 
 .music-container.play .img-container img {
