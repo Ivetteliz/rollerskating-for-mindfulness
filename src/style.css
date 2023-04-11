@@ -55,7 +55,7 @@ h2 {
 }
 
 .action-btn {
-  background-color: thistle;
+  background-color: pink;
   border: none;
   color: red;
   font-size: 11px;
@@ -79,10 +79,6 @@ h2 {
   animation-play-state: paused;
 }
 
-.music-container.play .img-container img {
-  animation-play-state: running;
-}
-
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -91,6 +87,10 @@ h2 {
   to {
     transform: rotate(360deg);
   }
+}
+
+.music-container.play .img-container img {
+  animation-play-state: running;
 }
 
 .music-info {
