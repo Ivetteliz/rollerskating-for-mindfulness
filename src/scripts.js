@@ -8,7 +8,7 @@ const progressContainer = document.querySelector("#progress-container");
 const title = document.querySelector("#title");
 
 let song = ["Melting", "Good Days", "Chamber of Reflection"];
-let songIndex = 0;
+let songIndex = 1;
 
 loadSong(song[songIndex]);
 
