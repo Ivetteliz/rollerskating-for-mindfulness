@@ -19,13 +19,38 @@ h1 {
 
 h2 {
   font-size: 10px;
-  color: white;
-  text-align: center;
-  margin-right: 65px;
-  margin-left: 67px;
-  background-color: black;
+  color: black;
+  margin-right: 28px;
+  margin-left: 96px;
   margin-top: 27px;
   margin-bottom: 22px;
+  width: initial;
+}
+
+#scroll-container {
+  border: none;
+  position: relative;
+  margin-left: 144px;
+  right: 71px;
+  width: 44px;
+  height: 39px;
+  overflow: hidden;
+}
+
+#scroll-text {
+  margin-left: -87px;
+  white-space: nowrap;
+  transform: translateX(100%);
+  animation: scrolling-animation 5s linear infinite;
+}
+
+@keyframes scrolling-animation {
+  from {
+    transform: translateX(25%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 .music-container {
