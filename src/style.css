@@ -7,6 +7,10 @@ body {
   margin-bottom: 5px;
 }
 
+.theme-color {
+  background-image: url("../images/themeChange.jpeg");
+}
+
 h1 {
   position: relative;
   font-family: "Courgette", cursive;

@@ -1,3 +1,10 @@
+function changeTheme() {
+  let body = document.querySelector("body");
+  body.classList.add("theme-color");
+}
+let themeBtn = document.querySelector(".theme-change");
+themeBtn.addEventListener("click", changeTheme);
+
 const musicContainer = document.querySelector("#music-container");
 const playBtn = document.querySelector("#play");
 const prevBtn = document.querySelector("#prev");
