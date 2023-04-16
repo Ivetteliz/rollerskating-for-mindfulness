@@ -1,6 +1,11 @@
 function changeTheme() {
   let body = document.querySelector("body");
-  body.classList.add("theme-color");
+
+  if (body.classList.contains("background-change")) {
+    body.classList.remove("background-change");
+  } else {
+    body.classList.add("background-change");
+  }
 }
 let themeBtn = document.querySelector(".theme-change");
 themeBtn.addEventListener("click", changeTheme);

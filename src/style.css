@@ -7,6 +7,10 @@ body {
   margin-bottom: 5px;
 }
 
+.background-change {
+  background-image: url("../images/themeChange.jpeg");
+}
+
 #backgroundBtn {
   border-radius: 20px;
   font-size: 13px;
@@ -18,10 +22,6 @@ body {
   position: relative;
   margin-left: 689px;
   top: 10px;
-}
-
-.theme-color {
-  background-image: url("../images/themeChange.jpeg");
 }
 
 h1 {
