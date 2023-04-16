@@ -7,6 +7,19 @@ body {
   margin-bottom: 5px;
 }
 
+#backgroundBtn {
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bolder;
+  border-color: black;
+  color: #86b7fe;
+  background: #7b4bbd94;
+  box-shadow: -1px 1px 67px 11px #040404;
+  position: relative;
+  margin-left: 689px;
+  top: 10px;
+}
+
 .theme-color {
   background-image: url("../images/themeChange.jpeg");
 }
