@@ -11,6 +11,10 @@ body {
   background-image: url("../images/themeChange.jpeg");
 }
 
+.background-change h1 {
+  color: #13111c;
+}
+
 #backgroundBtn {
   border-radius: 20px;
   font-size: 13px;
