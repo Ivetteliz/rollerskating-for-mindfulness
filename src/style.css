@@ -12,7 +12,7 @@ body {
 }
 
 .background-change h1 {
-  color: #13111c;
+  color: #ffc7e4;
 }
 
 #backgroundBtn {
@@ -35,7 +35,7 @@ h1 {
   font-size: 50px;
   width: 445px;
   height: 208px;
-  top: 25px;
+  top: 7px;
 }
 
 h2 {
@@ -82,7 +82,7 @@ h2 {
   height: 115px;
   border-radius: 18px;
   margin-left: 1122px;
-  margin-top: -101px;
+  margin-top: -119px;
   background-image: url(../images/stereo.png);
   background-repeat: no-repeat;
   background-size: 239px;
@@ -254,7 +254,7 @@ h2 {
   margin-left: 80px;
   border-radius: 20px;
   border-color: navy;
-  box-shadow: 1px 6px 33px 13px navy;
+  box-shadow: 1px 6px 64px 20px navy;
 }
 
 .ytcreator {
@@ -292,7 +292,7 @@ img {
   padding-top: 74px;
   border-width: 8px;
   border-radius: 20px;
-  box-shadow: -12px -9px 66px 21px #ff5c2e;
+  box-shadow: 0px -7px 66px 36px #ff5c2e;
 }
 
 .inspiredBy {
@@ -319,7 +319,7 @@ img {
   border-radius: 20px;
   border-style: solid;
   border-color: #602;
-  box-shadow: -1px 5px 61px 25px #602;
+  box-shadow: -1px 5px 72px 37px #602;
 }
 
 .d-block {
@@ -345,11 +345,33 @@ img {
   transition: opacity 0s 1.3s;
 }
 
-footer {
+#gitBtn {
+  border-radius: 20px;
+  font-size: larger;
+  display: block;
+  position: relative;
+  background: transparent;
+  border-color: #ffb2ff;
+  box-shadow: -2px -2px 33px 5px;
+  color: #ffb2ff;
+  margin-top: 60px;
+  margin-bottom: -39px;
+  right: -1034px;
+}
+
+.footer {
   display: flex;
   flex-direction: row-reverse;
-  margin-right: 21px;
-  margin-top: 73px;
+  margin-right: 96px;
+  margin-top: 14px;
   color: #ffffff;
   font-weight: 500;
+}
+
+#gitBtn:hover {
+  color: #86b7fe;
+}
+
+#backgroundBtn:hover {
+  color: #ffb2ff;
 }
