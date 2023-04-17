@@ -94,3 +94,9 @@ nextBtn.addEventListener("click", nextSong);
 audio.addEventListener("timeupdate", updateProgress);
 progressContainer.addEventListener("click", setProgress);
 audio.addEventListener("ended", nextSong);
+
+function gitLink() {
+  window.open(`https://github.com/Ivetteliz?tab=repositories, "_blank"`);
+}
+let gitHub = document.querySelector("#gitBtn");
+gitHub.addEventListener("click", gitLink);
